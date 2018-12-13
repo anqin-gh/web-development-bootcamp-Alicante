@@ -1,0 +1,124 @@
+@import 'https://fonts.googleapis.com/css?family=Share+Tech+Mono';
+
+* {
+    box-sizing: border-box;
+}
+
+#header {
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+#calculator {  
+    align-items: center;
+    width: 380px; 
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: #abc6c2;
+    background-color: #e0e0e0;
+    padding:8px;
+    margin-top:20px;
+    margin-left:auto;
+    margin-right:auto;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.22);
+}
+
+#display {
+    background: #bcbcbc;
+    border: 1px solid;
+    border-color: #95b7b2;
+    padding: 8px;
+    margin:16px 12px 10px 16px;
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+    border-radius: 8px;
+}
+
+#result p{
+  font-size:1.8em;
+}
+
+#result,#history {
+  text-align: right;
+}
+
+#history p{
+    min-height: 24px;
+}
+
+#keyboard {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%; 
+    grid-template-areas:
+        "seven eight nine ac ce" 
+        "four five six divide times"
+        "one two three plus equals"
+        "nought nought period hyphen equals";
+    justify-content: center;
+    grid-gap: 5px;
+    text-align: center;
+    margin: 8px 2px;
+    padding: 1px 20px;
+}
+
+#seven-div  { grid-area: seven  ; }
+#eight-div  { grid-area: eight  ; }
+#nine-div   { grid-area: nine   ; }
+#ac-div     { grid-area: ac     ; }
+#ce-div     { grid-area: ce     ; }
+#four-div   { grid-area: four   ; }
+#five-div   { grid-area: five   ; }
+#six-div    { grid-area: six    ; }
+#divide-div { grid-area: divide ; }
+#times-div  { grid-area: times  ; }
+#one-div    { grid-area: one    ; }
+#two-div    { grid-area: two    ; }
+#three-div  { grid-area: three  ; }
+#plus-div   { grid-area: plus   ; }
+#equals-div { grid-area: equals ; }
+#nought-div { grid-area: nought ; }
+#period-div { grid-area: period ; }
+#hyphen-div { grid-area: hyphen ; }
+
+button {
+    align-self: center;
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.btn-info {
+    background-color: #66ccff;
+}
+
+.btn-success {
+    background-color: #b3ffb3;
+}
+
+.btn-danger {
+    background-color: #ffb5b3;
+}
+
+.btn-warning {
+    background-color: #ffff80;
+}
+
+#keyboard .btn:active,.btn:hover {
+    color: white;
+}
+
+.btn:active {
+    font-size: 1.5em;
+}
+
+#keyboard .btn-unshadow:active,#keyboard .btn-unshadow:focus{
+    outline: 0;
+    box-shadow: none;
+}
