@@ -1,0 +1,62 @@
+* {
+	box-sizing: border-box;
+}
+
+main {
+	min-height: 540px;
+}
+
+footer {
+	background-color: #161616;
+	color: #8c8989;
+    font-size: 15px;
+    height: 67px;
+ 	position: relative;
+}
+
+footer>div {
+	height: 100%;
+	vertical-align: middle;
+}
+
+.fa {
+	padding: 12px;
+	margin: 5px;
+  	text-align: center;
+  	text-decoration: none;
+  	border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  	background: #3B5998;
+  	color: white;
+}
+
+.fa-twitter {
+  	background: #55ACEE;
+  	color: white;
+}
+
+.fa-linkedin {
+  	background: #007bb5;
+  	color: white;
+}
+
+a:hover,a:active,a:visited,a:link {
+	text-decoration: none;
+}
+
+.project-img {
+	width: : 100%;
+	vertical-align: middle;
+	margin: 20px auto;
+	display: block;
+}
+
+.project-description {
+	text-align: justify;
+}
